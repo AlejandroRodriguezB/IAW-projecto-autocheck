@@ -3,7 +3,12 @@ package com.iesemilidarder.base.data;
 public class SistemUtilsHelper {
 
     private SistemUtilsHelper(){
-        //constructor:igual que la classe no tiene retorno
-    }
 
+    }
+    public static void logError(Exception e){
+        consolePrint("Error"+ e);
+    }
+    public static void consolePrint(String message){
+        System.out.println(message);
+    }
 }

@@ -1,5 +1,8 @@
 package com.iesemilidarder.base.data;
 
+import com.iesemilidarder.base.AppConstants;
+import exception.IesMyException;
+
 public abstract class Vehicle {
     public abstract void start();
     public void brake(){
@@ -16,8 +19,14 @@ public abstract class Vehicle {
     }
 
     public void setNumberWheels(Integer numberWheels) {
+        if (numberWheels == null || numberWheels > AppConstants.MAX_WHEELS){
+            throw new IesMyException("demasiados ruedas");
+        }
         this.numberWheels = numberWheels;
     }
+
+
+
 
     public Double getPrice() {
         return price;
