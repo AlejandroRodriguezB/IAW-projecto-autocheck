@@ -8,6 +8,17 @@ public abstract class Vehicle {
     public void brake(){
         doLog("freno");
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private  String name;
+
     private String color;
 
     private Integer numberWheels;
