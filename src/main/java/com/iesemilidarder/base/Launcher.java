@@ -11,7 +11,7 @@ public class Launcher {
             System.out.println("Concesionario forest run app 7.0");
             Moto moto = new Moto();
             moto.setNumberWheels(4);
-            moto.setPrice(123.45);
+            moto.setPrice(123.00);
             moto.setColor("blanco");
             System.out.println(moto.getColor());
             moto.setNumberWheels(4);
