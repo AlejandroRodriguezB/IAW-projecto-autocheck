@@ -18,8 +18,15 @@ public class Launcher {
             moto.start();
             System.out.println("let's go boizs");
             moto.brake();
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             SistemUtilsHelper.logError(e);
+        }
+
+        Integer numItems = 6;
+        Integer numCar ;
+        for(numCar=0 ; numCar < numItems ; numCar++){
+            System.out.println();
         }
 
     }
